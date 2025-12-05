@@ -1,106 +1,86 @@
-# Portofolio-University-Project
-Kumpulan Project analisis data dan tugas tugas kuliah
+📁 Daftar Project
+1. 🖼️ Klasifikasi Gambar: Rock–Paper–Scissors
 
-📁 DAFTAR PROJECT
-1. 🖼️ Klasifikasi Gambar: Rock Paper Scissors
 File: KlasifikasiGambar-MachineLearning.ipynb
 
-Deskripsi Singkat:
-Project deep learning untuk klasifikasi gambar tangan dalam permainan batu-kertas-gunting. Menggunakan Convolutional Neural Network (CNN) dengan akurasi mencapai 92.5%.
+📌 Deskripsi Singkat
 
-Fitur:
+Model deep learning untuk klasifikasi gambar tangan (batu, kertas, gunting) menggunakan Convolutional Neural Network (CNN) dengan akurasi sekitar 92.5%.
 
-CNN dengan 3 layer konvolusi
+✨ Fitur Utama
 
-Data augmentation
+CNN dengan 3 convolutional layers
 
-Upload gambar interaktif
+Data augmentation untuk meningkatkan variasi data
 
-Early stopping saat akurasi >85%
+Early stopping ketika akurasi mencapai threshold
 
-Teknologi: TensorFlow, Keras, Jupyter Notebook
+Fitur upload gambar untuk prediksi langsung
 
+🛠️ Teknologi
 
-2. 📊 Analisis Data Kredit: Prediksi Persetujuan Kredit
+TensorFlow, Keras, NumPy, Matplotlib, Jupyter Notebook
+
+2. 📊 Analisis Data Kredit: Exploratory & Statistical Analysis
+
 File: M09_TGS (1).ipynb
 
 📌 Deskripsi Singkat
-Project analisis data untuk prediksi persetujuan kredit menggunakan dataset 60 nasabah. Menganalisis hubungan antara variabel demografi, finansial, dan status persetujuan kredit dengan visualisasi interaktif dan matriks korelasi.
+
+Analisis hubungan variabel demografi, finansial, dan status persetujuan kredit menggunakan dataset 60 nasabah. Menggunakan visualisasi statistik, data profiling, dan uji hipotesis.
 
 ✨ Fitur Utama
-✅ Analisis Korelasi Lengkap: Heatmap matriks korelasi antar variabel numerik
 
-✅ Data Profiling: Eksplorasi 11 variabel (7 numerik, 4 kategorikal)
+Analisis korelasi lengkap (heatmap)
 
-✅ Visualisasi Interaktif: Plot korelasi dengan annotasi nilai
+Eksplorasi 11 variabel (7 numerik, 4 kategorikal)
 
-✅ Google Colab Integration: Koneksi langsung dengan Google Drive
+Visualisasi interaktif dengan anotasi nilai korelasi
 
-✅ Statistical Analysis: Menggunakan SciPy untuk analisis statistik
+Integrasi Google Colab + Google Drive
 
-🛠️ Teknologi yang Digunakan
-Pandas - Manipulasi dan analisis data
+Uji statistik (T-Test & Chi-Square) menggunakan SciPy
 
-NumPy - Komputasi numerik
+🛠️ Teknologi
 
-Seaborn & Matplotlib - Visualisasi data
+Pandas – manipulasi data
 
-SciPy - Analisis statistik
+NumPy – komputasi numerik
 
-Google Colab - Cloud notebook environment
+Seaborn & Matplotlib – visualisasi data
 
-📊 Dataset (60 sampel, 11 fitur)
-Variabel Numerik:
-No - Nomor urut
+SciPy – uji statistik
 
-Age - Usia (22-60 tahun)
+Google Colab – environment notebook
 
-Income - Pendapatan (3.0-15.0)
+📊 Dataset Overview (60 sampel, 11 fitur)
 
-Debt - Hutang (1.0-6.0)
+Variabel numerik: Age, Income, Debt, CreditCardLimit, Score, Savings
+Variabel kategorikal: JobType, Marital, Education, Approved (target)
 
-CreditCardLimit - Batas kartu kredit (1.8-8.9)
+📈 Temuan Penting
 
-Score - Skor kredit (600-730)
+Age ↔ Income = 0.716 (korelasi kuat)
 
-Savings - Tabungan (0.1-8.0)
+Income ↔ Score = 0.651
 
-Variabel Kategorikal:
-JobType - Tipe pekerjaan (Contract, Permanent, Self-Employed)
+Age ↔ Savings = 0.658
 
-Marital - Status pernikahan (Single, Married)
+CreditCardLimit ↔ Score ≈ -0.004 (tidak berkorelasi)
 
-Education - Pendidikan (SMA, Univeristas, SMP)
+🎨 Visualisasi
 
-Approved - Persetujuan kredit (Yes, No) ← Target Variable
+Heatmap korelasi lengkap
 
-📈 Temuan Analisis
-Korelasi Signifikan:
-🔗 Age vs Income: 0.716 (Korelasi kuat positif)
+Annotated correlation values
 
-🔗 Age vs Score: 0.629 (Korelasi positif)
+Data profiling melalui df.info() & df.head()
 
-🔗 Income vs Score: 0.651 (Korelasi positif)
+3. 🏗️ Arsitektur Data & Dokumentasi Sistem — MRT Jakarta
 
-🔗 Age vs Savings: 0.658 (Korelasi positif)
+File: About MRTJ Project.md
 
-Korelasi Lemah:
-⚠️ CreditCardLimit vs Score: -0.004 (Hampir tidak berkorelasi)
+📌 Deskripsi Singkat
 
-⚠️ No vs Savings: -0.001 (Tidak berkorelasi)
+Project pemetaan arsitektur data dan dokumentasi teknis sebagai bagian dari studi kasus integrasi Data Lake MRT Jakarta. Fokus project meliputi analisis struktur database, pemetaan relasi antar tabel, serta perancangan alur data untuk mendukung integrasi lintas aplikasi.
 
-🎨 Visualisasi yang Dihasilkan
-Heatmap Korelasi: Matriks korelasi dengan skala warna coolwarm
-
-Annotated Values: Nilai korelasi pada setiap sel heatmap
-
-Data Summary: Info lengkap dataset dengan df.info() dan df.head()
-
-🚀 Insight Bisnis
-Usia berpengaruh terhadap pendapatan dan skor kredit
-
-Tabungan meningkat seiring bertambahnya usia
-
-Batas kartu kredit tidak berkorelasi dengan skor kredit
-
-Potensi model prediktif untuk persetujuan kredit
