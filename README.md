@@ -1,7 +1,7 @@
 📁 Daftar Project
 1. 🖼️ Klasifikasi Gambar: Rock–Paper–Scissors
 
-File: KlasifikasiGambar-MachineLearning.ipynb
+File: 01_Klasifikasi_Gambar-Machine_Learning.ipynb
 
 📌 Deskripsi Singkat
 
@@ -23,7 +23,7 @@ TensorFlow, Keras, NumPy, Matplotlib, Jupyter Notebook
 
 2. 📊 Analisis Data Kredit: Exploratory & Statistical Analysis
 
-File: M09_TGS (1).ipynb
+File: 02_Analisis Data Kredit.ipynb
 
 📌 Deskripsi Singkat
 
